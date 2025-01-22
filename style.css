@@ -1,0 +1,117 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #f06, #ff8c00); /* Vibrant Gradient Background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator Styles */
+.calculator {
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    padding: 20px;
+    text-align: center;
+    background: #222; /* Slightly darker background for calculator */
+}
+
+/* Calculator Display */
+.calculator-screen input {
+    width: 100%;
+    height: 60px;
+    font-size: 32px;
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: right;
+}
+
+/* Button Styles */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Button Base Styles */
+button {
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #666;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Operators Styles */
+.operator {
+    background-color: #ff8c00;
+}
+
+.operator:hover {
+    background-color: #e67e00;
+}
+
+/* Special Styles for 'C' and '=' */
+#clear {
+    background-color: #e74c3c;
+}
+
+#clear:hover {
+    background-color: #c0392b;
+}
+
+#equal {
+    background-color: #27ae60;
+    grid-column: span 2;
+}
+
+#equal:hover {
+    background-color: #2ecc71;
+}
+
+/* Decimal Button */
+#decimal {
+    background-color: #3498db;
+}
+
+#decimal:hover {
+    background-color: #2980b9;
+}
+
+/* Specific Button Colors */
+#zero {
+    grid-column: span 2;
+}
+
+/* Visual Effects on Focus */
+button:focus {
+    outline: none;
+}
+
+/* Screen Border */
+.calculator-screen {
+    margin-bottom: 20px;
+}
